@@ -3,13 +3,7 @@
   "patikabucketFE8ADD2E": {
    "Type": "AWS::S3::Bucket",
    "Properties": {
-    "BucketName": "patika-bucket",
-    "PublicAccessBlockConfiguration": {
-     "BlockPublicAcls": true,
-     "BlockPublicPolicy": true,
-     "IgnorePublicAcls": true,
-     "RestrictPublicBuckets": true
-    }
+    "BucketName": "patika-bucket"
    },
    "UpdateReplacePolicy": "Delete",
    "DeletionPolicy": "Delete",
