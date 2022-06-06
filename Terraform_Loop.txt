@@ -1,0 +1,27 @@
+count => loop over resources.
+	Usage Example;
+	resource "aws_iam_user" "example" {
+  		count = 3
+  		name  = "neo.${count.index}"
+	}
+	resource "aws_iam_user" "example" {
+ 		count = length(var.user_names)
+  	      name  = var.user_names[count.index]
+	}
+	
+for_each  => loop over resources and inline blocks within a resource.
+	Usage Example;
+	resource "aws_iam_user" "example" {
+ 	     for_each = toset(var.user_names)
+ 	     name     = each.value
+	 }
+for => loop over lists and maps.
+	Usage Example;
+	variable "names" {
+ 		description = "A list of names"
+ 		type        = list(string)
+  		default     = ["neo", "trinity", "morpheus"]
+	}
+	output "upper_names" {
+  		value = [for name in var.names : upper(name)]
+	}
