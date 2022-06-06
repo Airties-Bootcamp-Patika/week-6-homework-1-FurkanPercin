@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const cdk = require("aws-cdk-lib");
+const s3_cdk_stack_1 = require("../lib/s3-cdk-stack");
+const s3_bucket_stack_1 = require("../lib/s3-bucket-stack");
+const app = new cdk.App();
+new s3_cdk_stack_1.S3CdkStack(app, 'S3CdkStack');
+// Creating an S3 bucket stack
+const s3_bucket_stack = new s3_bucket_stack_1.S3BucketStack(app, 'patikaS3Stack');
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiczMtY2RrLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiczMtY2RrLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUNBLG1DQUFtQztBQUNuQyxzREFBaUQ7QUFDakQsNERBQXVEO0FBQ3ZELE1BQU0sR0FBRyxHQUFHLElBQUksR0FBRyxDQUFDLEdBQUcsRUFBRSxDQUFDO0FBQzFCLElBQUkseUJBQVUsQ0FBQyxHQUFHLEVBQUUsWUFBWSxDQUFDLENBQUM7QUFDbEMsOEJBQThCO0FBQzlCLE1BQU0sZUFBZSxHQUFHLElBQUksK0JBQWEsQ0FBQyxHQUFHLEVBQUUsZUFBZSxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIjIS91c3IvYmluL2VudiBub2RlXG5pbXBvcnQgKiBhcyBjZGsgZnJvbSAnYXdzLWNkay1saWInO1xuaW1wb3J0IHsgUzNDZGtTdGFjayB9IGZyb20gJy4uL2xpYi9zMy1jZGstc3RhY2snO1xuaW1wb3J0IHsgUzNCdWNrZXRTdGFjayB9IGZyb20gJy4uL2xpYi9zMy1idWNrZXQtc3RhY2snO1xuY29uc3QgYXBwID0gbmV3IGNkay5BcHAoKTtcbm5ldyBTM0Nka1N0YWNrKGFwcCwgJ1MzQ2RrU3RhY2snKTtcbi8vIENyZWF0aW5nIGFuIFMzIGJ1Y2tldCBzdGFja1xuY29uc3QgczNfYnVja2V0X3N0YWNrID0gbmV3IFMzQnVja2V0U3RhY2soYXBwLCAncGF0aWthUzNTdGFjaycpO1xuIl19
