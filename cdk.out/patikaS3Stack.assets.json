@@ -1,7 +1,7 @@
 {
   "version": "20.0.0",
   "files": {
-    "6fce93d3c798973662648d9ba298856605cacc66957f6db1b09ed9c6949e746b": {
+    "25649a5ccad1f04717fb687b0e3720d1b6f148f2a0fe82f9ca9458942142cd71": {
       "source": {
         "path": "patikaS3Stack.template.json",
         "packaging": "file"
@@ -9,7 +9,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "6fce93d3c798973662648d9ba298856605cacc66957f6db1b09ed9c6949e746b.json",
+          "objectKey": "25649a5ccad1f04717fb687b0e3720d1b6f148f2a0fe82f9ca9458942142cd71.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

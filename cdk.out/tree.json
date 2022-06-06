@@ -26,13 +26,7 @@
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {
-                    "bucketName": "patika-bucket",
-                    "publicAccessBlockConfiguration": {
-                      "blockPublicAcls": true,
-                      "blockPublicPolicy": true,
-                      "ignorePublicAcls": true,
-                      "restrictPublicBuckets": true
-                    }
+                    "bucketName": "patika-bucket"
                   }
                 },
                 "constructInfo": {
